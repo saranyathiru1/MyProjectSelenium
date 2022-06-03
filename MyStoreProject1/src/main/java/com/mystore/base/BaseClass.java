@@ -81,7 +81,7 @@ public class BaseClass {
 	
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups = {"Smoke", "Sanity","Regression"})
 	public void afterSuite() {
 		ExtentManager.endReport();
 	}
