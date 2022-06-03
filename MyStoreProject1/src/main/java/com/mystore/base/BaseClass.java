@@ -31,7 +31,7 @@ public class BaseClass {
 	//Declare ThreadLocal driver
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 	
-	
+	//Added comments for base class
 	@BeforeSuite(groups = {"Smoke", "Sanity","Regression"})
 	public void loadConfig() {
 		
